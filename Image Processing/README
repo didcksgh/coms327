@@ -1,0 +1,7 @@
+It takes the name of a PGM image on the command line, 
+reads the image,
+applies a Sobel filter, 
+and write the edge-detected image to disc with the file name sobel.pgm.
+
+
+All input files with be greyscale PGM images of size 1024 × 1024.

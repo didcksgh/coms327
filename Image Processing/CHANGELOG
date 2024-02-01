@@ -1,0 +1,24 @@
+-I've downloaded the skeloton code.
+Aug 28
+
+-Add scanf() in main() to take the file name from the command line excluding the extension(.pgm)
+-Add string value of r_fileName and w_fileName in main method
+-Using strcpy and strcat, take and modify the file name appropriately to read and write the file
+-read and write the file without applying sobel filter, yet.
+Aug 29
+
+
+-I've created SobelFilter method to apply sobel filter.
+-In the method, I've added the pseusdo code provided by professor.
+-Added SobelFilter method between read_pgm() and write_pgm() in main method.
+-I've found some error while taking the filename in main method.
+Sep 1
+
+-I've corrected the error that I found yesterday.
+-Checking my programm, and it is working perfectly.
+Sep 2
+
+
+
+
+
