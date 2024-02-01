@@ -1,0 +1,27 @@
+This assignment is about adding the code to drive the pc.
+The pc moves related to the user's input.
+
+7|y = upper left
+8|k = up
+9|u = upper right
+6|l = right
+3|n = lower right
+2|j = lower down
+1|b = lower left
+4|h = left
+
+> = entering the building while standing on the building.
+< = exit from the building.
+
+5|space|. = rest
+
+t = trainer list. Displaying the symbol and the relative position
+up arrow = scroll up the trainer list
+down arrow = scroll down the trainer list
+escape = return to the trainer control
+
+Q = quit the game
+
+Trainer will move like sentry after the battle.
+The pc will get out the pokemart or pokecenter right after it enter to the building and see the message.
+It can move right after without pressing <.
