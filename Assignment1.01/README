@@ -1,0 +1,4 @@
+It is about generating the map randomly.
+There are two paths north to south and east to west and each gates is generated randomly.
+There are 8 different territories: boulder, path, clearing, grass, water, tree, pokecenter, and market.
+The size of the map should be 21 x 80.
