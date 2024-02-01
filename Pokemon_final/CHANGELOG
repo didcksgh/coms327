@@ -1,0 +1,11 @@
+Nov 30, 2023 
+-Decided to build a classic airplane shooting game since I'm used to play it when I was young.
+
+Dec 1, 2023
+-Implemented some basic features to the game. Creating airplanes, moving functions and shooting bullets. 
+
+Dec 2, 2023
+-There was some delay when the airplane moves, so I fixed it.
+
+Dec 3, 2023
+-Added colors and worked on to fully complete the game.

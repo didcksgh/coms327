@@ -1,0 +1,26 @@
+I made a simple classic airplane shooting game.
+You get to choose the type of airplane you like to play beginning of the game.
+After you choose which airplane you like to play with, you can choose the difficulty from easy, medium to hard.
+Difficulty is decided based on the enemy airplane's bullets frequency.
+
+
+
+Game controls are:
+
+Arrow-up and Arrow-down to move up and down.
+
+'a': shoot bullet.
+'q': special move/ultimate.
+
+     Special move/ultimate is following:
+
+     "Skybolt": Shoots bullets in a spread pattern by shooting 5 bullets at once.
+     "Thunderbolt": Temporarily increases bullet speed(currently set for five seconds)
+     "Fireball": Fires homing bullets that track the enemy.
+
+
+
+To run the game:
+Makefile will create airplane_battle.exe. ./airplane_battle to run.
+
+
