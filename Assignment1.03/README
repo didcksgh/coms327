@@ -1,0 +1,8 @@
+This assignment is for calculating the movement paths for hikers and rivals.
+Both will take the shortest path to the PC which is defined by the travel time.
+Only hiker can cross mountain.
+PC will be placed randomly on the road not on the gate.
+Movement can occur in all 8 directions.
+The hiker and rival distance map would be displayed on the screen.
+
+
