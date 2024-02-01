@@ -1,0 +1,11 @@
+It is about the connecting the map in the world.
+The size of the world is 401x401.
+The map is moved by an user input.
+n: moving to the next map located north
+s: moving to the next map located south
+e: moving to the next map located east
+w: moving to the next map located west
+f: moving to the map where the user enter the coordinates
+q: quit the game
+
+

@@ -1,0 +1,47 @@
+-I've created poke327.c file
+Sep 4th
+
+-define the map size
+-define xy(x, y) (m->map[y][x]) because it is quite confused to use the original.
+-create typdef values
+Sep 7th
+
+
+-created set_boulders method to create boulders in the map
+-created set_gate method to set a gate randomly generated. Each gates is n, s, w, e.
+-created generate_map method to generate new map.
+-created print_map method to print the map and it has randomly picked territories.
+-created main method.
+Sep 8th
+
+-created build_paths method to find the paths from the gate to the other gate. North to south, and west to east.
+-created building_location method to find the right location of the poke center and market.
+-created place_pokecenter and place_market method to place the buildings at the location where I've found from the building location.
+Sep 9th
+
+-I've found errors. Map isn't generated randomly. It prints out the same map.
+-I've corrected the error. Added srand((unsigned int)time(NULL)); to generate random number with the current time.
+-I've corrected the error of the terrain generator. Now, it is generate the terrain randomly.
+Sep 10th
+
+
+-I've downloaded the solution code
+-define the world_size as 401
+-add typedef world
+Sep 15th
+
+-I've modified the new map to connect the gate of the neighbor map also allocate the meemory
+if there's no world in the current index. In addition, with the given probability,
+I've added some if function to place pokemart and pokecenter, level-differently.
+Sep 16
+
+-I've created create_world() and delete_world()
+-I've modified the main() to get an input from an user and do a required function
+by the input. After quiiting game, the world has been deleted so that the next map can be new.
+-I've noticed some error in my code, trying to fix it.
+Sep 17
+
+
+
+
+
