@@ -1,0 +1,4 @@
+This assignment is about placing PC and Trainers on the map. Each Trainers has a sepcific movement and PC will just stand still.
+Each Trainers are represented by their first alphabet of the word. 
+Characters cannot occupied same cell same time, and they cannot spawn in or move into an exit. Characters cannot enter the territory where the movement cost for that trainers type is infinity.
+I've added trainer add probability so that the game will not just add 10 trainers but also add more trainers until the random number get bigger than my prob. Also, I tried to set more others than rival or hiker.
