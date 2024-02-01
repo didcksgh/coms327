@@ -1,0 +1,195 @@
+-I've created poke327.c file
+Sep 4th
+
+-define the map size
+-define xy(x, y) (m->map[y][x]) because it is quite confused to use the original.
+-create typdef values
+Sep 7th
+
+
+-created set_boulders method to create boulders in the map
+-created set_gate method to set a gate randomly generated. Each gates is n, s, w, e.
+-created generate_map method to generate new map.
+-created print_map method to print the map and it has randomly picked territories.
+-created main method.
+Sep 8th
+
+-created build_paths method to find the paths from the gate to the other gate. North to south, and west to east.
+-created building_location method to find the right location of the poke center and market.
+-created place_pokecenter and place_market method to place the buildings at the location where I've found from the building location.
+Sep 9th
+
+-I've found errors. Map isn't generated randomly. It prints out the same map.
+-I've corrected the error. Added srand((unsigned int)time(NULL)); to generate random number with the current time.
+-I've corrected the error of the terrain generator. Now, it is generate the terrain randomly.
+Sep 10th
+
+
+-I've downloaded the solution code
+-define the world_size as 401
+-add typedef world
+Sep 15th
+
+-I've modified the new map to connect the gate of the neighbor map also allocate the meemory
+if there's no world in the current index. In addition, with the given probability,
+I've added some if function to place pokemart and pokecenter, level-differently.
+Sep 16
+
+-I've created create_world() and delete_world()
+-I've modified the main() to get an input from an user and do a required function
+by the input. After quiiting game, the world has been deleted so that the next map can be new.
+-I've noticed some error in my code, trying to fix it.
+Sep 17
+
+
+-I've downloaded the solution code 1.02
+-I've creatd changelog and readme file.
+
+Sep 19
+
+-I've created character_type and modified terrain_type by adding num_terrain_types
+-I've created typdef struct pc, and it has a pc position.
+-I've implemented the move cost
+
+Sep 20
+
+-I've modified typedef world by adding pc_t pc.
+-I've created place_pc() to place pc on the map on the road not the gate randomly.
+-I've added if statment in the for loop in the print_map() to print pc's position.('@')
+-I've added place_pc in main
+
+Sep 21
+
+-I've copied and modified path_cmp() to hiker_cmp() and raival_cmp() from the solution code provided(1.02).
+-To do so, I've added hiker distnace[][] and rival_distance[][] in the typedef world.
+
+
+-I've create dist_cal() to find and calculate the distance from hiker and rival to pc. 
+-To do so, I've modified professor's code from dijkstra_path. Instead, we checked 8-directions of each hiker and rival's position.
+-I've added dist_cal on current map in the main.
+
+Sep 28
+
+-I've created print method to print hiker's and rival's distance. print_hiker_distance() and print_rival_distance().
+-I've added both print methods in do-while loop in main
+-I've noticed pc sometimes is placed on the mountain. I'm working on it to fix it.
+
+Sep 40
+
+-I've fixed the error that pc is not on the right place. I've added place_pc() and dist_cal() inside the do-while loop.
+-I've noticed the error that hiker's and rival's distance are same.
+-I've fixed the problem.
+
+Oct 1.
+
+
+-I've downloaded the solution code.
+-I've created README and CHANGELOG.
+
+Oct 4.
+
+-define each character's symbol.
+-define typdef moovement_type, trainers, and character.
+-define MIN_TRAINERS as 8 to make it 10 at least.
+-define ADD_TRAINER_PROB as 50 to look like more real game.
+
+Oct 5.
+
+-set static eight_directions[8] for easier use to find the next possible destination in 8-directions.
+-create the move_hiker_functiontion() to make a movement fuction of hiker following the instruction.
+-create the move_rival_functiontion() to make a movement function of rival following the instruction.
+
+Oct 6.
+
+-I've added rand_dir().
+-create the move_pacer_functiontion() to make a movement function of pacer following the instruction.
+-create the move_wanderer_functiontion() to make a movement function of wanderer following the instruction.
+-create the move_sentry_functiontion() to make a movement function of sentry following the instruction.
+-create the move_explorer_functiontion() to make a movement function of explorer following the instruction.
+-create the move_pc_function().
+
+Oct 7.
+
+-create random_pos() for the random setting of the position of the character.
+-create void new_hiker() to create new hiker.
+-create void new_rival() to create new rival.
+-create void new_others() to create new others, pacer, wanderer, sentry or explorer. 
+-create delete_character().
+-modify new_map by adding init_pc(), pathfind() and place_characters().
+-create game_loop which is the loop for operating the game.
+-modify the main by adding game_loop and delete other parts which operate and print the map.
+-got an error due to use the switch to in the gameloop to set an appropriate move_function for each trainers.
+-add array of the function pointers, move_function(), probelm is fixed.
+
+
+Oct 8.
+
+-Download the solution code
+-create character.c, chracter.h, input.h, input.c and poke327.h to write the code more efficiently and compactly.
+-sorting the corresponding part of the code into character.c and character.h from the original code.
+
+Oct 19th
+
+-in input.c, 
+-create input_init_terminal() to initialize the terminal for the pokemon game using ncurses.
+  color is also applied in here.
+-create input_reset_terminal() to reset the terminal after using ncurses
+-create enter_pokemart and enter_pokecenter to print out the message when the pc enter the each building.
+-create compare_trainers_distance to calculate the distance from trainers to pc.
+-create input_display to display the game world.
+-create input_battle to implemnet the battle simply. The npc would be recorded defeated automatically.
+-creaet input_trainers_list display() and input_trainers_list().
+-create input_scroll_list to implement the scroll up and down of the trainer list. The maximum of 10 trainers would be displayed on a page.
+-create move_pc_direction to control the pc's movement. 
+-create input_user_input to handle the input from the users.
+
+Oct 20
+
+poke327:
+-modify the new_map()
+-modify the main function().
+
+Oct 22
+
+-Downloaded answer code.
+
+-Create io_fly_world to get a coordinate where the user want to go and move to the corresponding map.
+
+-Modifying io_teleport_pc to make pc arrives on the path.  
+
+Oct 25
+
+-Modifying the move_pc_dir to make pc so that the destination of the next movement of the player would not be the INT_MAX territory.
+
+Oct 26
+
+-Creating function in poke327 named next_map which moves player to the next map when the pc gets to the gate.
+
+-Adding next_map in if statement in game_loop() so that when player gets to the gate, the pc goes to the corresponding map. 
+
+Oct 27
+
+-Converting into cpp by casting.
+
+-Changing the second statement in map_territory into ter_path to make pc able to move to south or east.
+
+Oct 29
+
+-Download the solution code and csv files needed
+
+Nov 1
+
+-create data_parse.cpp and data_parse.h
+-In data_parse.h, create class: 
+pokemon_data, move_data, pokemon_move_data, pokemon_species_data, experience_data, pokemon_stats_data, stats_data, and pokemon_types.data.
+
+Nov 2
+
+-add next_char() in data_parse.cpp.
+-add data_parse() to perform the parse and print the data.
+-add int+_to_stirng() to change int value to string except INT_MAX, and modify the data_parse() to apply it.
+-add data_parse() in main in poke327 then return 0.
+
+Nov 5
+
+
